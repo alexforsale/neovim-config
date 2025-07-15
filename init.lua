@@ -1,6 +1,6 @@
 
 -- default settings
-require("sane-defaults")
+require("config.sane-defaults")
 
 -- lazy
 require("config.lazy")
