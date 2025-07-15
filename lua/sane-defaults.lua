@@ -73,3 +73,6 @@ vim.o.confirm = true
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.o.tabstop = 8
+vim.o.softtabstop = 8
+vim.o.shiftwidth = 2
