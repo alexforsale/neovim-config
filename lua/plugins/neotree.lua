@@ -1,6 +1,7 @@
 return {
     {
       "nvim-neo-tree/neo-tree.nvim",
+      lazy = false, -- neo-tree will lazily load itself
       dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
@@ -10,6 +11,12 @@ return {
         -- OR use snacks.nvim's image module:
         "folke/snacks.nvim",
       },
+      config = function()
+        vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal<CR>")
+        require("neo-tree").setup({
+          close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tabj
+        })
+      end
     },
       "s1n7ax/nvim-window-picker", -- for open_with_window_picker keymaps
       config = function()
@@ -27,11 +34,4 @@ return {
           },
         })
       end,
-  lazy = false, -- neo-tree will lazily load itself
-  config = function()
-    vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal<CR>")
-    require("neo-tree").setup({
-      close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tabj
-    })
-  end
 }
