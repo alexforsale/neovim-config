@@ -12,6 +12,11 @@ vim.keymap.set("n", "<leader>bd", function()
   Snacks.bufdelete()
 end, { desc = "Delete Buffer" })
 
+-- tabs
+vim.keymap.set("n", "<leader><tab>h", "<cmd>tabprevious<cr>")
+vim.keymap.set("n", "<leader><tab>d", "<cmd>tabclose<cr>")
+vim.keymap.set("n", "<leader><tab>n", "<cmd>tabnew<cr>")
+vim.keymap.set("n", "<leader><tab>l", "<cmd>tabNext<cr>")
 -- Editing
 -- better indenting
 vim.keymap.set("v", "<", "<gv")
