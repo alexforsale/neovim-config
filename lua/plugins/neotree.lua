@@ -12,7 +12,7 @@ return {
         "folke/snacks.nvim",
       },
       config = function()
-        vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal<CR>")
+        vim.keymap.set("n", "<leader>ee", "<Cmd>Neotree reveal<CR>")
         require("neo-tree").setup({
           close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tabj
         })

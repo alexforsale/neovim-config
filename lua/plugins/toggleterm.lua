@@ -16,6 +16,6 @@ return {
         end
         vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
         -- keybinding
-        vim.keymap.set("n", "<leader>v", "<Cmd>ToggleTerm<CR>")
+        vim.keymap.set("n", "<leader>vv", "<Cmd>ToggleTerm<CR>")
     end
 }
