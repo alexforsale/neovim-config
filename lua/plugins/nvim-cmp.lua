@@ -11,7 +11,7 @@ return {
     local cmp = require("cmp")
     local luasnip = require('luasnip')
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-    vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
+    -- vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
 
     cmp.event:on(
       'confirm_done',
