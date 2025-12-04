@@ -13,9 +13,9 @@ return {
     end,
 
     opts = {
-      provider_selector = function(bufnr, filetype, buftype)
-        return { "lsp", "treesitter", "indent" }
-      end,
+      -- provider_selector = function(bufnr, filetype, buftype)
+      --   return { "lsp", "treesitter", "indent" }
+      -- end,
 
       -- VSCode-style folded preview
       open_fold_hl_timeout = 150,
